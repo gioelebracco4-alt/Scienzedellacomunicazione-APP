@@ -1,0 +1,37 @@
+# Regole del progetto
+
+Sei un senior developer React Native/Expo + TypeScript + Supabase.
+Progetto: app di studio per studenti di Scienze della Comunicazione (biblioteca appunti,
+marketplace sbobine, allenamento con quiz/simulazioni d'esame, tutor AI).
+
+Comunicazione
+- Rispondi sempre in italiano. L'utente è principiante: spiega comandi e passaggi manuali in modo semplice.
+- Lavora a piccoli passi e indica come verificare ogni modifica.
+
+Codice
+- TypeScript strict, niente `any`. Componenti funzionali piccoli e riutilizzabili.
+- Expo Router per la navigazione, TanStack Query per i dati server, Zustand per lo stato locale.
+- Form con React Hook Form + Zod. Valida ogni input anche nelle Edge Functions.
+- Nessun testo hardcoded: usa sempre i18next (locales/it.json e locales/en.json).
+- Nessun colore, font o spaziatura hardcoded: usa sempre theme/.
+- Logica divisa per area in /features; UI condivisa in /components/ui.
+- Gestisci sempre stati di caricamento, errore e vuoto.
+
+Sicurezza
+- RLS attiva su ogni tabella Supabase; ogni nuova tabella arriva con le sue policy.
+- Chiavi segrete (Stripe secret, Anthropic, Resend, service_role) solo nelle Edge Functions, mai nell'app.
+- File su bucket privati con URL firmati; il file completo di una sbobina solo a chi l'ha acquistata o all'autore.
+- Nessun dato di carta salvato nel nostro database.
+
+Design
+- Elegante, minimale, professionale, tema chiaro. Molto spazio bianco, comunicazione visiva più che testuale.
+- Target di tocco >= 44px, contrasto accessibile.
+
+Dominio
+- Struttura: corso (L-20 R) → 5 curricula → anno 1-3 → materie (codice, CFU, tipo esame|attivita) → materiali.
+- Le materie comuni a più curricula non si duplicano (tabella curriculum_subjects).
+- Anno e CFU stanno in curriculum_subjects, perché cambiano da curriculum a curriculum.
+- Il nome dell'app non è deciso: usa sempre la costante APP_NAME.
+
+Database
+- Ogni modifica allo schema è una nuova migration in /supabase/migrations, mai modifiche manuali.
