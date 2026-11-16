@@ -1,0 +1,38 @@
+{
+  "common": {
+    "loading": "Caricamento…",
+    "retry": "Riprova",
+    "errorTitle": "Qualcosa è andato storto",
+    "errorMessage": "Controlla la connessione e riprova.",
+    "emptyTitle": "Ancora niente qui",
+    "comingSoon": "In arrivo"
+  },
+  "tabs": {
+    "home": "Home",
+    "dashboard": "Esplora",
+    "training": "Allenamento",
+    "chat": "Chat",
+    "profile": "Profilo"
+  },
+  "home": {
+    "greeting": "Ciao!",
+    "welcome": "Benvenuto su {{appName}}",
+    "emptyDescription": "Qui troverai i tuoi progressi, le sbobine in evidenza e le novità delle tue materie."
+  },
+  "dashboard": {
+    "title": "Esplora",
+    "emptyDescription": "Biblioteca, Marketplace, Piano di studio, Tutor AI e Download, tutto in un colpo d'occhio."
+  },
+  "training": {
+    "title": "Allenamento",
+    "emptyDescription": "Flashcard, vero o falso, trova l'intruso e simulazioni d'esame per ogni materia."
+  },
+  "chat": {
+    "title": "Chat",
+    "emptyDescription": "Parla con i venditori e con i compagni del tuo corso."
+  },
+  "profile": {
+    "title": "Profilo",
+    "emptyDescription": "Il tuo curriculum, le statistiche di studio e le impostazioni."
+  }
+}

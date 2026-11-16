@@ -1,0 +1,38 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "retry": "Try again",
+    "errorTitle": "Something went wrong",
+    "errorMessage": "Check your connection and try again.",
+    "emptyTitle": "Nothing here yet",
+    "comingSoon": "Coming soon"
+  },
+  "tabs": {
+    "home": "Home",
+    "dashboard": "Explore",
+    "training": "Practice",
+    "chat": "Chat",
+    "profile": "Profile"
+  },
+  "home": {
+    "greeting": "Hi there!",
+    "welcome": "Welcome to {{appName}}",
+    "emptyDescription": "Your progress, featured lecture notes and subject news will appear here."
+  },
+  "dashboard": {
+    "title": "Explore",
+    "emptyDescription": "Library, Marketplace, Study plan, AI Tutor and Downloads, all at a glance."
+  },
+  "training": {
+    "title": "Practice",
+    "emptyDescription": "Flashcards, true or false, odd one out and exam simulations for every subject."
+  },
+  "chat": {
+    "title": "Chat",
+    "emptyDescription": "Talk with sellers and classmates from your course."
+  },
+  "profile": {
+    "title": "Profile",
+    "emptyDescription": "Your curriculum, study stats and settings."
+  }
+}
